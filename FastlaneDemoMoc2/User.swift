@@ -5,7 +5,7 @@
 
 import Foundation
 
-class User: NSObject {
+open class User: NSObject {
 
 
     var login: String
@@ -16,7 +16,7 @@ class User: NSObject {
         self.password = password
     }
 
-    override var description: String {
+    open override var description: String {
         return "[User \(self.login) \(self.password)]"
     }
 }
